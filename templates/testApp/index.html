@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Food</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{%static 'css/index.css'%}" />
+  </head>
+  <body>
+    <div class="container-fluid main-container p-0">
+      <header class="header p-0">
+        <div class="row h-50 top-header m-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <div
+              class="icons-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-facebook"></i>
+            </div>
+            <div
+              class="icons-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div
+              class="icons-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-youtube"></i>
+            </div>
+          </div>
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center"
+          >
+            <h6><b>GoodFood</b></h6>
+          </div>
+          <div class="col-md-4 d-flex align-items-center justify-content-end">
+            <button class="btn btn-outline-secondary me-3 btn-sm">
+              View menu
+            </button>
+          </div>
+        </div>
+        <div class="row h-50 bottom-header m-0">
+          <div class="col d-flex justify-content-center align-items-center">
+            <ul class="nav">
+              <li class="nav-items">
+                <a href="/home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-items"><a href="" class="nav-link">About</a></li>
+              <li class="nav-items">
+                <a href="" class="nav-link">Locations</a>
+              </li>
+              <li class="nav-items"><a href="" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid render-element">
+        {% block child_block%} {% endblock %}
+      </div>
+      <footer class="footer p-0">
+        <div class="row m-0 h-100">
+          <div class="col-md-8 p-0">
+            <div class="row m-0 upper-footer p-3">
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Contact Info</th>
+                    <th scope="col">Navigation</th>
+                    <th scope="col">Template</th>
+                    <th scope="col">Social</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      GoodFood, 1249 Main <br />
+                      Street, Brooklyn, 66048 <br />
+
+                      <small class="text-muted">8896497776</small>
+                      <br />
+                      <small class="text-muted">drshivam49@gmail.com</small>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row m-0 lower-footer">
+              <div class="col-md-8 d-flex align-items-center">
+                <p>&copy; GoodFood -- Powered by Mathtech</p>
+              </div>
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-end"
+              >
+                <p>
+                  Created By
+                  <a href="https:/www.github.com/ShivamMathtech"
+                    >Shivam Singh</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-img-grid p-3">
+            <div class="row h-50 m-0">
+              <div class="col-md-6 p-0">
+                <img src="{% static 'img/p1.jpg' %}" alt="" />
+              </div>
+              <div class="col-md-6 p-0">
+                <img src="{% static 'img/p2.jpg' %}" alt="" />
+              </div>
+            </div>
+            <div class="row h-50 m-0">
+              <div class="col-md-6 p-0">
+                <img src="{% static 'img/p2.jpg' %}" alt="" />
+              </div>
+              <div class="col-md-6 p-0">
+                <img src="{% static 'img/p1.jpg' %}" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
