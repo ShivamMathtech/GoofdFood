@@ -204,3 +204,80 @@ li a {
 .br-1 {
   border-left: 2px solid #c9c7c7;
 }
+.about-container-1 {
+  height: 70vh;
+  background-color: #fff;
+}
+.about-img-container {
+  height: 95%;
+  width: 100%;
+  border-radius: 5px;
+}
+.about-img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.abt-text-content h1 {
+  font-size: 50px;
+}
+.abt-text-content p {
+  font-size: 20px;
+}
+.abt-container-2 {
+  background-color: #ffffff;
+}
+.abt-container-2 h1 {
+  font-size: 60px;
+}
+.abt-img-box {
+  height: 100%;
+  width: 50%;
+}
+.abt-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.story-container {
+  height: 80vh;
+  background-color: #ffffff;
+  position: relative;
+}
+.scroll-area {
+  height: 100%;
+  overflow-y: scroll;
+}
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+.fix-area {
+  height: 100%;
+  border-radius: 5px;
+}
+.fix-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.story-card-1 {
+  height: 100%;
+}
+.story-card-1 h1 {
+  font-size: 50px;
+}
+.story-card-1 img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.story-card-1 p {
+  text-align: justify;
+}
+.badge {
+  position: absolute;
+  top: 0px;
+  left: 20%;
+}

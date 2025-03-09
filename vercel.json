@@ -1,0 +1,5 @@
+{
+  "builds": [{ "src": "resturantproject/wsgi.py", "use": "@vercel/python" }],
+
+  "routes": [{ "src": "/(.*)", "dest": "resturantproject/wsgi.py" }]
+}

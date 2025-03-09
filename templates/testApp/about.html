@@ -1,5 +1,96 @@
-{% extends 'testApp/index.html'%} {% block child_block%}
-
-<h1>This is About Sections</h1>
-
+{% extends 'testApp/index.html'%} {% block child_block%} {% load static %}
+<div class="container-fluid about-container-1 p-2">
+  <div class="row m-0 h-100">
+    <div class="col-md-3 d-flex align-items-center">
+      <div class="about-img-container">
+        <img src="{% static 'img/p10.jpg' %}" alt="" />
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div class="abt-text-content text-center">
+        <h1>
+          Serving Food <br />
+          <span class="myclr">since 2014</span>
+        </h1>
+        <br />
+        <p>
+          Expceptional service ans food the will <br />
+          leave you coming back for more
+        </p>
+        <button class="btn mybtn rounded-0">Explore Menu</button>
+      </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center">
+      <div class="about-img-container">
+        <img src="{% static 'img/p8.jpg' %}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid abt-container-2 mt-2 me-2 p-2">
+  <div class="row m-0 h-50">
+    <div class="col-md-6">
+      <h1>
+        You go-to place for <br />
+        great burgers, Fresh <br />
+        salads,<span class="myclr">and more!</span>
+      </h1>
+    </div>
+    <div class="col-md-6">
+      <div class="row m-0 h-50">
+        <div class="col d-flex justify-content-end">
+          <div class="abt-img-box">
+            <img src="{% static 'img/p7.jpg' %}" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 h-50">
+        <div class="col d-flex">
+          <div class="abt-img-box">
+            <img src="{% static 'img/p11.jpg' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt-2 me-2 pe-2 story-container p-2">
+  <div class="badge bg-danger">Our Story</div>
+  <div class="row m-0 h-100">
+    <div class="col-md-6 scroll-area p-2">
+      <div class="story-card-1 text-center p-4">
+        <h1>
+          We're more than <br />
+          just a <span class="myclr">restaurant</span>
+        </h1>
+        <img src="{% static 'img/p2.jpg' %}" alt="" />
+        <p class="mt-2">
+          Nestled in the heart of the bustling city, GoodFood Hotel was more
+          than just a place to stay—it was an experience. Known for its
+          world-class hospitality and, most importantly, its extraordinary
+          cuisine, it had a reputation that extended far beyond the city limits.
+          Travelers, food critics, and celebrities all flocked to this hidden
+          gem, eager to indulge in the flavors that made it famous. But what
+          made the food at GoodFood Hotel so exceptional? No one really knew.
+          The chefs were sworn to secrecy, the kitchen was off-limits to
+          outsiders, and every dish seemed to have a magical touch. Some said it
+          was the rare spices imported from faraway lands, while others believed
+          it was the hotel’s secret underground garden where herbs were grown
+          under the moonlight. One young chef, Arjun, had always dreamed of
+          working at GoodFood Hotel. After years of training, he finally got his
+          chance when he was hired as an apprentice. On his first day, he was
+          given a simple task—chopping vegetables. But as the days passed, he
+          began to notice something peculiar. Every night, just before closing,
+          the head chef, Madame Leila, would disappear into a hidden room behind
+          the kitchen. She would return with a small jar of mysterious
+          ingredients, adding just a pinch to each dish before it was served.
+          Arjun’s curiosity grew.
+        </p>
+      </div>
+    </div>
+    <div class="col-md-6 fix-area p-0">
+      <img src="{% static 'img/p14.jpg'%}" alt="" />
+    </div>
+  </div>
+</div>
 {% endblock%}
