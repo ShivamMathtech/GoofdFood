@@ -241,7 +241,7 @@ li a {
   object-fit: cover;
 }
 .story-container {
-  height: 80vh;
+  height: 85vh;
   background-color: #ffffff;
   position: relative;
 }
@@ -280,4 +280,19 @@ li a {
   position: absolute;
   top: 0px;
   left: 20%;
+}
+.chef-intro {
+  height: 100vh;
+  background-color: #fff;
+}
+.chef-intro h1 {
+  font-size: 50px;
+}
+.chef-photo-box {
+  height: 100%;
+}
+.chef-photo-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
