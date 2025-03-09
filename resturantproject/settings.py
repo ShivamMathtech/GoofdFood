@@ -29,7 +29,8 @@ SECRET_KEY = "django-insecure-%*dr$p%^=&=8ck@pw#(ncxw=6!cwdus*7crj(ksu)$$4rhhk=e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['goofd-food.vercel.app', '127.0.0.1', 'localhost']
+
 
 
 # Application definition
