@@ -327,3 +327,24 @@ li a {
 .card-text {
   font-size: 15px;
 }
+.form-container {
+  height: 100vh;
+  position: relative;
+}
+.container-banner {
+  height: 50vh;
+  background-image: url("../img/p2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.form-box {
+  height: 400px;
+  width: 60%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 20%;
+}
+.form-box p {
+  font-size: 12px;
+}

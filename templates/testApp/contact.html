@@ -1,3 +1,83 @@
-{% extends 'testApp/index.html'%} {% block child_block%}
-<h1>THis is contact page</h1>
+{% extends 'testApp/index.html'%} {% block child_block%} {% load static %}
+<div class="container-fluid form-container">
+  <div class="container-banner"></div>
+  <div class="form-box p-2">
+    <div class="row m-0 h-100">
+      <div class="col-md-5" style="border-right: 2px solid #f4f5f5">
+        <p><b>Come join us Soon!</b></p>
+        <p>
+          Whether you come for a casual lunch <br />
+          with friends, or a romantic dinner date, <br />
+          our attentive staff is dedicated to <br />
+          providing top-notch service.
+        </p>
+        <br />
+        <small class="text-muted">GoodFood Brooklyn</small> <br />
+        <p>
+          GoodFood, 1249 Main Street, <br />
+          Brooklyn, 66048
+        </p>
+        <br />
+
+        <small class="text-muted">GoodFood Manhattan</small> <br />
+        <p>
+          GoodFood, 1649 Main Street, <br />
+          Brooklyn, 66048
+        </p>
+      </div>
+      <div class="col-md-7">
+        <form class="row" method="post">
+          {% csrf_token %}
+          <div class="col-md-6">
+            <label for="fname" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control rounded-0"
+              id="firstname"
+              name="firstname"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control rounded-0"
+              id="lastname"
+              name="lastname"
+            />
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control rounded-0"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div class="col-12">
+            <label for="Phone" class="form-label">Phone</label>
+            <input
+              type="text"
+              class="form-control rounded-0"
+              id="Phone"
+              name="Phone"
+            />
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              class="form-control"
+            ></textarea>
+          </div>
+          <div class="col-12 mt-2">
+            <button type="submit" class="btn mybtn w-100">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
