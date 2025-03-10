@@ -296,3 +296,34 @@ li a {
   width: 100%;
   object-fit: cover;
 }
+.location-container {
+  height: 100vh;
+  background-color: #fff;
+}
+.location-img-box {
+  height: 100%;
+}
+.location-img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.location-content-box {
+  height: 300px;
+}
+.location-content-box h1 {
+  font-size: 50px;
+}
+.location-content-box p {
+  font-size: 20px;
+}
+.locations {
+  height: 600px;
+  background-color: #fcfcfc;
+}
+.card-img-top {
+  height: 300px;
+}
+.card-text {
+  font-size: 15px;
+}

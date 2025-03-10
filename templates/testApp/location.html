@@ -1,3 +1,61 @@
-{% extends 'testApp/index.html'%} {% block child_block %}
-<h1>This is Location page</h1>
+{% extends 'testApp/index.html'%} {% block child_block %} {% load static %}
+<div class="container-fluid location-container p-2">
+  <div class="row m-0 h-100">
+    <div class="col-md-6 scroll-area p-0">
+      <div class="location-content-box text-center p-4">
+        <h1>
+          Join us for your <br />
+          <span class="myclr">next meal</span>
+        </h1>
+        <p class="mt-2">
+          Come experience the perfect blend of <br />comfort add elegence with
+          us.
+        </p>
+      </div>
+      <div class="locations p-4">
+        <div class="card">
+          <div class="card" style="">
+            <img
+              class="card-img-top"
+              src="{% static 'img/p7.jpg' %}"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Chomp, 1249 Main Street, <br />
+                Brooklyn, 66048 <br />
+                <br />
+                <small class="text-muted">8896497776</small>
+                <small class="text-muted float-end">drshivam49@gmail.com</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-2">
+          <div class="card" style="">
+            <img
+              class="card-img-top"
+              src="{% static 'img/r.jpg' %}"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Chomp, 1249 Main Street, <br />
+                Brooklyn, 66048 <br />
+                <br />
+                <small class="text-muted">8896497776</small>
+                <small class="text-muted float-end">drshivam49@gmail.com</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 fix-area pe-0">
+      <div class="location-img-box">
+        <img src="{% static 'img/b.jpg' %}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock%}
